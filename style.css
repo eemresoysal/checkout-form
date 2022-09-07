@@ -1,0 +1,208 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  text-align: center;
+  height: 10vh;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.container .form {
+  opacity: 0.7;
+  max-width: 500px;
+}
+.container .form label {
+  display: inline-block;
+  padding: 0.3rem;
+}
+.container .form h3 {
+  padding: 0.3rem;
+}
+.container .form .label2 {
+  display: flex;
+  padding: 0.2rem;
+  margin-top: 0.6rem;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 10rem;
+}
+.container .input {
+  border: 1px solid gray;
+  width: 400px;
+  border-radius: 10px;
+  padding: 0.1rem;
+}
+.container .input .inputbox {
+  border: none;
+  outline: none;
+}
+.container .icon {
+  margin: 5px 5px;
+}
+.container .shipping h3 {
+  margin-top: 1rem;
+}
+.container .country-postcode {
+  display: flex;
+  justify-content: space-between;
+}
+.container .country-postcode .country {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 0.3rem 0;
+}
+.container .country-postcode .country #country {
+  border: none;
+  outline: none;
+}
+.container .country-postcode .postcode {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 0.3rem 0;
+}
+.container .country-postcode .postcode #text {
+  border: none;
+  outline: none;
+}
+.container .checkbox1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  margin-top: 1rem;
+  height: 4rem;
+  column-gap: 1rem;
+}
+.container .checkbox1 h3 {
+  height: 2rem;
+}
+.container .btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+.container .btn button {
+  padding: 0.4rem;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  background-color: orange;
+}
+.container .btn button:hover {
+  cursor: pointer;
+  transform: scale(90%);
+}
+.container .pay {
+  background-color: rgba(196, 189, 189, 0.4);
+  height: 500px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.container .pay .product {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-around;
+}
+.container .pay .product img {
+  width: 50%;
+  border-radius: 10px;
+  min-width: 100px;
+}
+.container .pay .product .item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.container .pay .product .item p {
+  font-size: 2rem;
+  color: orange;
+}
+.container .pay .product .item span {
+  color: black;
+  text-decoration: line-through;
+  font-size: 1.4rem;
+}
+.container .pay .product .item .minusplus {
+  display: flex;
+  border: 1px solid olive;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+.container .pay .product .item .minusplus p {
+  color: black;
+  font-size: 1.4rem;
+}
+.container .pay .product .item .minusplus .fa-solid {
+  background-color: #c1b9b9;
+  margin: 0 5px;
+}
+.container .pay .price {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.container .pay .price .shipping-total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  margin: 0 1rem;
+  padding: 0.5rem 0;
+}
+.container .pay .price .shipping-total p {
+  font-size: 1.5rem;
+}
+
+@media all and (max-width: 1355px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .form {
+    width: 35%;
+    margin: 2rem auto;
+  }
+  .container .form .contact {
+    margin: 1rem auto;
+  }
+  .container .form .country-postcode {
+    justify-content: start;
+    gap: 6.3rem;
+  }
+  .container .pay {
+    width: 60%;
+    height: 600px;
+    margin: 2rem auto;
+  }
+  .container .pay .product {
+    margin: 0.5rem;
+  }
+  .container .pay .product .price {
+    padding: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
